@@ -1,0 +1,743 @@
+{
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "text",
+      "text": "CI/CD and Automation Systems",
+      "x": -100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_1",
+      "type": "text",
+      "text": "Jenkins",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_2",
+      "type": "text",
+      "text": "Core Concepts",
+      "x": 947,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_3",
+      "type": "text",
+      "text": "Pipeline (As Code)",
+      "x": 1795,
+      "y": -1348,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_4",
+      "type": "text",
+      "text": "Nodes/Agents",
+      "x": 1879,
+      "y": -1255,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_5",
+      "type": "text",
+      "text": "Stages",
+      "x": 1953,
+      "y": -1153,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_6",
+      "type": "text",
+      "text": "Steps",
+      "x": 2016,
+      "y": -1044,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_7",
+      "type": "text",
+      "text": "Architecture & Scaling",
+      "x": 1082,
+      "y": -196,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_8",
+      "type": "text",
+      "text": "Controller-Agent Model",
+      "x": 2202,
+      "y": -626,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_9",
+      "type": "text",
+      "text": "Distributed Builds",
+      "x": 2241,
+      "y": -506,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_10",
+      "type": "text",
+      "text": "High Availability",
+      "x": 2267,
+      "y": -383,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_11",
+      "type": "text",
+      "text": "Kubernetes Integration",
+      "x": 2280,
+      "y": -258,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_12",
+      "type": "text",
+      "text": "Syntax Types",
+      "x": 1082,
+      "y": 136,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_13",
+      "type": "text",
+      "text": "Declarative (Recommended)",
+      "x": 2280,
+      "y": 198,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_14",
+      "type": "text",
+      "text": "Scripted (Groovy-based)",
+      "x": 2202,
+      "y": 566,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_15",
+      "type": "text",
+      "text": "Manageability",
+      "x": 947,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_16",
+      "type": "text",
+      "text": "Plugin Ecosystem (1800+)",
+      "x": 2016,
+      "y": 984,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_17",
+      "type": "text",
+      "text": "Test Controllers",
+      "x": 1953,
+      "y": 1093,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_18",
+      "type": "text",
+      "text": "Shared Libraries",
+      "x": 1879,
+      "y": 1195,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_19",
+      "type": "text",
+      "text": "Configuration as Code (JCasC)",
+      "x": 1795,
+      "y": 1288,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_20",
+      "type": "text",
+      "text": "GitHub Actions",
+      "x": -100,
+      "y": 370,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_21",
+      "type": "text",
+      "text": "Components",
+      "x": 370,
+      "y": 1017,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_22",
+      "type": "text",
+      "text": "Workflows (YAML)",
+      "x": 1261,
+      "y": 1819,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_23",
+      "type": "text",
+      "text": "Events/Triggers",
+      "x": 1141,
+      "y": 1936,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_24",
+      "type": "text",
+      "text": "Jobs",
+      "x": 1005,
+      "y": 2034,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_25",
+      "type": "text",
+      "text": "Actions (Marketplace)",
+      "x": 858,
+      "y": 2113,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_26",
+      "type": "text",
+      "text": "Runners",
+      "x": -100,
+      "y": 1170,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_27",
+      "type": "text",
+      "text": "GitHub-hosted",
+      "x": 149,
+      "y": 2343,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_28",
+      "type": "text",
+      "text": "Self-hosted",
+      "x": -349,
+      "y": 2343,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_29",
+      "type": "text",
+      "text": "Key Features",
+      "x": -570,
+      "y": 1017,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_30",
+      "type": "text",
+      "text": "Native Integration",
+      "x": -1058,
+      "y": 2113,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_31",
+      "type": "text",
+      "text": "Serverless Convenience",
+      "x": -1275,
+      "y": 1987,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_32",
+      "type": "text",
+      "text": "Reusable Workflows",
+      "x": -1461,
+      "y": 1819,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_33",
+      "type": "text",
+      "text": "GitLab CI",
+      "x": -500,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_34",
+      "type": "text",
+      "text": "Value Proposition",
+      "x": -1147,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_35",
+      "type": "text",
+      "text": "All-in-One Platform",
+      "x": -1852,
+      "y": 1410,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_36",
+      "type": "text",
+      "text": "DevSecOps Integration",
+      "x": -2117,
+      "y": 1145,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_37",
+      "type": "text",
+      "text": "Auto DevOps",
+      "x": -2288,
+      "y": 810,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_38",
+      "type": "text",
+      "text": "Features",
+      "x": -1147,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_39",
+      "type": "text",
+      "text": "GitLab Runner",
+      "x": -2288,
+      "y": -870,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_40",
+      "type": "text",
+      "text": "Merge Trains",
+      "x": -2117,
+      "y": -1205,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_41",
+      "type": "text",
+      "text": "Built-in Security Scanners",
+      "x": -1852,
+      "y": -1470,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_42",
+      "type": "text",
+      "text": "CI/CD Pipeline Stages",
+      "x": -100,
+      "y": -430,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_43",
+      "type": "text",
+      "text": "Build (Compile/Package)",
+      "x": -570,
+      "y": -1077,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_44",
+      "type": "text",
+      "text": "Test (Unit/Integration)",
+      "x": -266,
+      "y": -1212,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_45",
+      "type": "text",
+      "text": "Deliver (Staging)",
+      "x": 66,
+      "y": -1212,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_46",
+      "type": "text",
+      "text": "Deploy (Production)",
+      "x": 370,
+      "y": -1077,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_47",
+      "type": "text",
+      "text": "Best Practices",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_48",
+      "type": "text",
+      "text": "Version Control Definitions",
+      "x": 947,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_49",
+      "type": "text",
+      "text": "Minimize Logic in DSL",
+      "x": 1060,
+      "y": -277,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_50",
+      "type": "text",
+      "text": "Shift-Left Security",
+      "x": 1100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_51",
+      "type": "text",
+      "text": "Clean Workspaces",
+      "x": 1060,
+      "y": 217,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_52",
+      "type": "text",
+      "text": "Automated Testing",
+      "x": 947,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0",
+      "fromNode": "node_0",
+      "toNode": "node_1"
+    },
+    {
+      "id": "edge_1",
+      "fromNode": "node_1",
+      "toNode": "node_2"
+    },
+    {
+      "id": "edge_2",
+      "fromNode": "node_2",
+      "toNode": "node_3"
+    },
+    {
+      "id": "edge_3",
+      "fromNode": "node_2",
+      "toNode": "node_4"
+    },
+    {
+      "id": "edge_4",
+      "fromNode": "node_2",
+      "toNode": "node_5"
+    },
+    {
+      "id": "edge_5",
+      "fromNode": "node_2",
+      "toNode": "node_6"
+    },
+    {
+      "id": "edge_6",
+      "fromNode": "node_1",
+      "toNode": "node_7"
+    },
+    {
+      "id": "edge_7",
+      "fromNode": "node_7",
+      "toNode": "node_8"
+    },
+    {
+      "id": "edge_8",
+      "fromNode": "node_7",
+      "toNode": "node_9"
+    },
+    {
+      "id": "edge_9",
+      "fromNode": "node_7",
+      "toNode": "node_10"
+    },
+    {
+      "id": "edge_10",
+      "fromNode": "node_7",
+      "toNode": "node_11"
+    },
+    {
+      "id": "edge_11",
+      "fromNode": "node_1",
+      "toNode": "node_12"
+    },
+    {
+      "id": "edge_12",
+      "fromNode": "node_12",
+      "toNode": "node_13"
+    },
+    {
+      "id": "edge_13",
+      "fromNode": "node_12",
+      "toNode": "node_14"
+    },
+    {
+      "id": "edge_14",
+      "fromNode": "node_1",
+      "toNode": "node_15"
+    },
+    {
+      "id": "edge_15",
+      "fromNode": "node_15",
+      "toNode": "node_16"
+    },
+    {
+      "id": "edge_16",
+      "fromNode": "node_15",
+      "toNode": "node_17"
+    },
+    {
+      "id": "edge_17",
+      "fromNode": "node_15",
+      "toNode": "node_18"
+    },
+    {
+      "id": "edge_18",
+      "fromNode": "node_15",
+      "toNode": "node_19"
+    },
+    {
+      "id": "edge_19",
+      "fromNode": "node_0",
+      "toNode": "node_20"
+    },
+    {
+      "id": "edge_20",
+      "fromNode": "node_20",
+      "toNode": "node_21"
+    },
+    {
+      "id": "edge_21",
+      "fromNode": "node_21",
+      "toNode": "node_22"
+    },
+    {
+      "id": "edge_22",
+      "fromNode": "node_21",
+      "toNode": "node_23"
+    },
+    {
+      "id": "edge_23",
+      "fromNode": "node_21",
+      "toNode": "node_24"
+    },
+    {
+      "id": "edge_24",
+      "fromNode": "node_21",
+      "toNode": "node_25"
+    },
+    {
+      "id": "edge_25",
+      "fromNode": "node_20",
+      "toNode": "node_26"
+    },
+    {
+      "id": "edge_26",
+      "fromNode": "node_26",
+      "toNode": "node_27"
+    },
+    {
+      "id": "edge_27",
+      "fromNode": "node_26",
+      "toNode": "node_28"
+    },
+    {
+      "id": "edge_28",
+      "fromNode": "node_20",
+      "toNode": "node_29"
+    },
+    {
+      "id": "edge_29",
+      "fromNode": "node_29",
+      "toNode": "node_30"
+    },
+    {
+      "id": "edge_30",
+      "fromNode": "node_29",
+      "toNode": "node_31"
+    },
+    {
+      "id": "edge_31",
+      "fromNode": "node_29",
+      "toNode": "node_32"
+    },
+    {
+      "id": "edge_32",
+      "fromNode": "node_0",
+      "toNode": "node_33"
+    },
+    {
+      "id": "edge_33",
+      "fromNode": "node_33",
+      "toNode": "node_34"
+    },
+    {
+      "id": "edge_34",
+      "fromNode": "node_34",
+      "toNode": "node_35"
+    },
+    {
+      "id": "edge_35",
+      "fromNode": "node_34",
+      "toNode": "node_36"
+    },
+    {
+      "id": "edge_36",
+      "fromNode": "node_34",
+      "toNode": "node_37"
+    },
+    {
+      "id": "edge_37",
+      "fromNode": "node_33",
+      "toNode": "node_38"
+    },
+    {
+      "id": "edge_38",
+      "fromNode": "node_38",
+      "toNode": "node_39"
+    },
+    {
+      "id": "edge_39",
+      "fromNode": "node_38",
+      "toNode": "node_40"
+    },
+    {
+      "id": "edge_40",
+      "fromNode": "node_38",
+      "toNode": "node_41"
+    },
+    {
+      "id": "edge_41",
+      "fromNode": "node_0",
+      "toNode": "node_42"
+    },
+    {
+      "id": "edge_42",
+      "fromNode": "node_42",
+      "toNode": "node_43"
+    },
+    {
+      "id": "edge_43",
+      "fromNode": "node_42",
+      "toNode": "node_44"
+    },
+    {
+      "id": "edge_44",
+      "fromNode": "node_42",
+      "toNode": "node_45"
+    },
+    {
+      "id": "edge_45",
+      "fromNode": "node_42",
+      "toNode": "node_46"
+    },
+    {
+      "id": "edge_46",
+      "fromNode": "node_0",
+      "toNode": "node_47"
+    },
+    {
+      "id": "edge_47",
+      "fromNode": "node_47",
+      "toNode": "node_48"
+    },
+    {
+      "id": "edge_48",
+      "fromNode": "node_47",
+      "toNode": "node_49"
+    },
+    {
+      "id": "edge_49",
+      "fromNode": "node_47",
+      "toNode": "node_50"
+    },
+    {
+      "id": "edge_50",
+      "fromNode": "node_47",
+      "toNode": "node_51"
+    },
+    {
+      "id": "edge_51",
+      "fromNode": "node_47",
+      "toNode": "node_52"
+    }
+  ]
+}

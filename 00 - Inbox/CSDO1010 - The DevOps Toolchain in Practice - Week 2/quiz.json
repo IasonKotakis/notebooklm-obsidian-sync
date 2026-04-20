@@ -1,0 +1,265 @@
+{
+  "title": "Terraform Quiz",
+  "questions": [
+    {
+      "question": "Which approach to automation does Terraform use, where the user defines the desired end-state rather than the specific steps to reach it?",
+      "answerOptions": [
+        {
+          "text": "Imperative",
+          "rationale": "An imperative approach requires the user to define step-by-step instructions, which is the opposite of how Terraform operates.",
+          "isCorrect": false
+        },
+        {
+          "text": "Procedural",
+          "rationale": "Procedural logic involves explicit sequences of operations, whereas Terraform's engine determines the necessary actions automatically.",
+          "isCorrect": false
+        },
+        {
+          "text": "Declarative",
+          "rationale": "In a declarative model, the configuration describes what the final infrastructure should look like, and the tool handles the underlying logic to achieve it.",
+          "isCorrect": true
+        },
+        {
+          "text": "Manual",
+          "rationale": "Manual provisioning relies on human intervention through a UI or CLI, failing to leverage the benefits of infrastructure as code.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider the rideshare or taxi analogy where you provide the destination rather than driving directions."
+    },
+    {
+      "question": "What is the primary function of the `terraform.tfstate` file in a Terraform workspace?",
+      "answerOptions": [
+        {
+          "text": "It stores the user's login credentials and API keys for various cloud providers.",
+          "rationale": "Storing sensitive credentials in the state file is a security risk; these should be managed through environment variables or secret managers.",
+          "isCorrect": false
+        },
+        {
+          "text": "It acts as a source of truth by tracking the IDs and properties of real-world resources managed by Terraform.",
+          "rationale": "Terraform uses this file to map your configuration to the actual resources created in the cloud so it can manage their lifecycle.",
+          "isCorrect": true
+        },
+        {
+          "text": "It contains the history of every command ever run in the terminal for auditing purposes.",
+          "rationale": "While it provides a snapshot of current resources, it is not a comprehensive command-line history log.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is a backup copy of the HCL configuration files in case the originals are deleted.",
+          "rationale": "The state file contains metadata and resource attributes returned by providers, not the original HCL code itself.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how Terraform remembers what it has already provisioned between different sessions."
+    },
+    {
+      "question": "When working in a team, which Terraform command is typically used during the 'Plan' phase to preview changes without modifying the infrastructure?",
+      "answerOptions": [
+        {
+          "text": "terraform apply",
+          "rationale": "This command is used to reach the final state by executing changes, though it does show a plan for confirmation first.",
+          "isCorrect": false
+        },
+        {
+          "text": "terraform plan",
+          "rationale": "This command creates an execution plan, allowing teams to review and validate the proposed changes before they are applied.",
+          "isCorrect": true
+        },
+        {
+          "text": "terraform refresh",
+          "rationale": "Refresh only reconciles the state file with the real-world infrastructure; it does not show the changes required to reach a new desired state.",
+          "isCorrect": false
+        },
+        {
+          "text": "terraform validate",
+          "rationale": "Validation checks for internal consistency and syntax errors in the code but does not compare it to the current cloud environment.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This step provides a 'speculative' look at what actions Terraform intends to take."
+    },
+    {
+      "question": "What does the term 'Configuration Drift' refer to in the context of infrastructure management?",
+      "answerOptions": [
+        {
+          "text": "The natural progression of software versions as new patches are released by vendors.",
+          "rationale": "While versions change, drift specifically refers to the divergence between the defined code and the actual environment.",
+          "isCorrect": false
+        },
+        {
+          "text": "When the real-world infrastructure starts to vary from the state defined in the configuration files.",
+          "rationale": "Drift occurs when manual changes or external factors cause the actual environment to no longer match the code that describes it.",
+          "isCorrect": true
+        },
+        {
+          "text": "The process of moving resources from one cloud provider to another to save costs.",
+          "rationale": "Moving providers is a migration strategy, not a spontaneous divergence from a defined configuration.",
+          "isCorrect": false
+        },
+        {
+          "text": "A feature in Terraform that automatically rotates passwords every thirty days.",
+          "rationale": "Password rotation is a security policy, whereas drift is a state of inconsistency that Terraform aims to correct.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider what happens if someone logs into a cloud portal and manually changes a setting that was previously managed by code."
+    },
+    {
+      "question": "Which HashiCorp tool is specifically designed to enforce 'Policy as Code' governance, such as ensuring all resources are deployed in a specific region?",
+      "answerOptions": [
+        {
+          "text": "Packer",
+          "rationale": "Packer is used for building machine images, not for enforcing runtime governance policies on Terraform plans.",
+          "isCorrect": false
+        },
+        {
+          "text": "Vault",
+          "rationale": "Vault is focused on secrets management and encryption, whereas policy enforcement on infrastructure is handled by a different tool.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sentinel",
+          "rationale": "Sentinel allows organizations to define sandboxes and policies that must be satisfied before infrastructure changes can be applied.",
+          "isCorrect": true
+        },
+        {
+          "text": "Vagrant",
+          "rationale": "Vagrant is a tool for building and managing virtual development environments, not for organizational policy enforcement.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This tool defines the 'sandbox' boundaries that infrastructure must stay within to be compliant."
+    },
+    {
+      "question": "In the recommended practices for Infrastructure as Code, why is it advised to 'document as little as possible'?",
+      "answerOptions": [
+        {
+          "text": "Because documentation is irrelevant in a fast-paced DevOps environment.",
+          "rationale": "Documentation is important, but the goal is to make it automated rather than manual and prone to obsolescence.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because the IaC code itself acts as the living documentation of the infrastructure's state.",
+          "rationale": "Code that is version-controlled and readable serves as a single source of truth that stays up-to-date with every change.",
+          "isCorrect": true
+        },
+        {
+          "text": "To prevent unauthorized users from understanding how the network is built.",
+          "rationale": "Security through obscurity is not the primary driver for this best practice; accuracy and consistency are the main goals.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because Terraform does not support comments or descriptions within its configuration files.",
+          "rationale": "Terraform HCL fully supports comments, but the practice refers to avoiding separate, manual documentation files.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about what happens to a separate Word document or Wiki page when a server setting is changed in the code."
+    },
+    {
+      "question": "What is the difference between mutable and immutable infrastructure when updating a server?",
+      "answerOptions": [
+        {
+          "text": "Mutable replaces the server, while immutable updates it in-place.",
+          "rationale": "This is the reverse of the actual definitions; mutation involves changing an existing entity.",
+          "isCorrect": false
+        },
+        {
+          "text": "Mutable allows for configuration changes in-place, whereas immutable replaces the server with a new version.",
+          "rationale": "Immutability ensures that once a resource is created, it is never modified; changes require the deployment of a fresh resource.",
+          "isCorrect": true
+        },
+        {
+          "text": "Immutable infrastructure is only possible in on-premises data centres.",
+          "rationale": "Immutability is a common pattern in cloud computing, leveraging the ease of spinning up and tearing down virtual resources.",
+          "isCorrect": false
+        },
+        {
+          "text": "Mutable infrastructure is a more modern approach that reduces downtime compared to immutable.",
+          "rationale": "Immutable infrastructure is generally considered more modern as it avoids 'snowflake' servers and partial upgrade failures.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "One approach treats servers like 'cattle' that can be replaced, while the other treats them like 'pets' that are nurtured and changed over time."
+    },
+    {
+      "question": "Which Terraform command automatically reformats your configuration files to follow the recommended HCL style?",
+      "answerOptions": [
+        {
+          "text": "terraform validate",
+          "rationale": "Validate checks the logic and syntax of the code but does not modify the visual layout or indentation of the files.",
+          "isCorrect": false
+        },
+        {
+          "text": "terraform plan",
+          "rationale": "Plan analyzes the current state versus the desired state but does not touch the source code's formatting.",
+          "isCorrect": false
+        },
+        {
+          "text": "terraform fmt",
+          "rationale": "The fmt command updates configuration files in the current directory for readability and consistency according to HashiCorp's standards.",
+          "isCorrect": true
+        },
+        {
+          "text": "terraform init",
+          "rationale": "Initialization prepares the workspace by downloading providers and modules but does not reformat the user's configuration code.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This command is helpful for ensuring consistency across multiple team members' coding styles."
+    },
+    {
+      "question": "When defining providers in HCL, what is the purpose of the `version` argument in the `required_providers` block?",
+      "answerOptions": [
+        {
+          "text": "It specifies the minimum version of the operating system required to run Terraform.",
+          "rationale": "The version argument refers to the specific provider plugin (like AWS or Azure), not the host OS requirements.",
+          "isCorrect": false
+        },
+        {
+          "text": "It ensures that Terraform uses a specific, tested version of the provider to avoid breaking changes.",
+          "rationale": "Constrainting versions, such as using $\\sim> 5.92$, prevents Terraform from automatically installing newer versions that might be incompatible with your code.",
+          "isCorrect": true
+        },
+        {
+          "text": "It sets the price tier of the cloud resources being provisioned.",
+          "rationale": "Resource pricing is determined by the cloud provider's API and specific arguments like 'instance_type', not by the provider plugin version.",
+          "isCorrect": false
+        },
+        {
+          "text": "It identifies the version of the `terraform.tfstate` file being used.",
+          "rationale": "State file versions are managed internally by Terraform and are not defined within the `required_providers` block.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how software libraries are pinned to prevent unexpected updates from causing failures."
+    },
+    {
+      "question": "What is the primary benefit of using Terraform 'Modules'?",
+      "answerOptions": [
+        {
+          "text": "They allow for the encryption of the `terraform.tfstate` file.",
+          "rationale": "Encryption of state is handled by the backend (like HCP Terraform), not by the use of modules.",
+          "isCorrect": false
+        },
+        {
+          "text": "They provide reusable, configurable collections of infrastructure that promote best practices.",
+          "rationale": "Modules allow teams to package common patterns (like a standard web server stack) and share them throughout an organization.",
+          "isCorrect": true
+        },
+        {
+          "text": "They reduce the amount of RAM required to run the Terraform CLI.",
+          "rationale": "Modules organize code for humans but do not necessarily change the local resource consumption of the Terraform binary significantly.",
+          "isCorrect": false
+        },
+        {
+          "text": "They allow Terraform to run without an active internet connection.",
+          "rationale": "Terraform still requires connectivity to provider APIs to manage resources, regardless of whether modules are used.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider how you would avoid 'reinventing the wheel' for every new application that needs a standard database."
+    }
+  ]
+}

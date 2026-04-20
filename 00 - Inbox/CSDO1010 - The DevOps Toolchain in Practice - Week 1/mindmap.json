@@ -1,0 +1,119 @@
+{
+  "name": "Git and Version Control Systems",
+  "children": [
+    {
+      "name": "About Version Control",
+      "children": [
+        {
+          "name": "Definition"
+        },
+        {
+          "name": "Source Code Management"
+        },
+        {
+          "name": "Benefits"
+        },
+        {
+          "name": "History"
+        }
+      ]
+    },
+    {
+      "name": "Git Core Concepts",
+      "children": [
+        {
+          "name": "Distributed Architecture"
+        },
+        {
+          "name": "Repository Types"
+        },
+        {
+          "name": "Commits and Snapshots"
+        },
+        {
+          "name": "Branching and Merging"
+        },
+        {
+          "name": "Staging Area"
+        }
+      ]
+    },
+    {
+      "name": "Git Workflows",
+      "children": [
+        {
+          "name": "Centralized Workflow"
+        },
+        {
+          "name": "Feature Branch Workflow"
+        },
+        {
+          "name": "Gitflow Workflow"
+        },
+        {
+          "name": "Trunk-based Development"
+        },
+        {
+          "name": "GitHub Flow"
+        },
+        {
+          "name": "Forking Workflow"
+        }
+      ]
+    },
+    {
+      "name": "Git Operations and Commands",
+      "children": [
+        {
+          "name": "Setup and Config"
+        },
+        {
+          "name": "Starting Projects"
+        },
+        {
+          "name": "Day-to-day Work"
+        },
+        {
+          "name": "Synchronization"
+        },
+        {
+          "name": "Undoing Changes"
+        },
+        {
+          "name": "Resolving Conflicts"
+        }
+      ]
+    },
+    {
+      "name": "Collaboration Platforms",
+      "children": [
+        {
+          "name": "GitHub"
+        },
+        {
+          "name": "Bitbucket"
+        },
+        {
+          "name": "GitLab"
+        },
+        {
+          "name": "Pull Requests"
+        }
+      ]
+    },
+    {
+      "name": "Installation and Tooling",
+      "children": [
+        {
+          "name": "Operating Systems"
+        },
+        {
+          "name": "Command Line Interface"
+        },
+        {
+          "name": "GUIs and Desktop Clients"
+        }
+      ]
+    }
+  ]
+}

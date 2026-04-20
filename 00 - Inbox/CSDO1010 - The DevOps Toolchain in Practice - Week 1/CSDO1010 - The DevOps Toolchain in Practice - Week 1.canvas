@@ -1,0 +1,491 @@
+{
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "text",
+      "text": "Git and Version Control Systems",
+      "x": -100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_1",
+      "type": "text",
+      "text": "About Version Control",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_2",
+      "type": "text",
+      "text": "Definition",
+      "x": 992,
+      "y": -429,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_3",
+      "type": "text",
+      "text": "Source Code Management",
+      "x": 1087,
+      "y": -168,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_4",
+      "type": "text",
+      "text": "Benefits",
+      "x": 1087,
+      "y": 108,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_5",
+      "type": "text",
+      "text": "History",
+      "x": 992,
+      "y": 369,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_6",
+      "type": "text",
+      "text": "Git Core Concepts",
+      "x": 23,
+      "y": 350,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_7",
+      "type": "text",
+      "text": "Distributed Architecture",
+      "x": 617,
+      "y": 885,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_8",
+      "type": "text",
+      "text": "Repository Types",
+      "x": 458,
+      "y": 1020,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_9",
+      "type": "text",
+      "text": "Commits and Snapshots",
+      "x": 270,
+      "y": 1110,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_10",
+      "type": "text",
+      "text": "Branching and Merging",
+      "x": 64,
+      "y": 1148,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_11",
+      "type": "text",
+      "text": "Staging Area",
+      "x": -143,
+      "y": 1132,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_12",
+      "type": "text",
+      "text": "Git Workflows",
+      "x": -423,
+      "y": 205,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_13",
+      "type": "text",
+      "text": "Centralized Workflow",
+      "x": -748,
+      "y": 935,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_14",
+      "type": "text",
+      "text": "Feature Branch Workflow",
+      "x": -893,
+      "y": 852,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_15",
+      "type": "text",
+      "text": "Gitflow Workflow",
+      "x": -1017,
+      "y": 740,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_16",
+      "type": "text",
+      "text": "Trunk-based Development",
+      "x": -1115,
+      "y": 605,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_17",
+      "type": "text",
+      "text": "GitHub Flow",
+      "x": -1183,
+      "y": 452,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_18",
+      "type": "text",
+      "text": "Forking Workflow",
+      "x": -1218,
+      "y": 288,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_19",
+      "type": "text",
+      "text": "Git Operations and Commands",
+      "x": -423,
+      "y": -265,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_20",
+      "type": "text",
+      "text": "Setup and Config",
+      "x": -1218,
+      "y": -348,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_21",
+      "type": "text",
+      "text": "Starting Projects",
+      "x": -1183,
+      "y": -512,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_22",
+      "type": "text",
+      "text": "Day-to-day Work",
+      "x": -1115,
+      "y": -665,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_23",
+      "type": "text",
+      "text": "Synchronization",
+      "x": -1017,
+      "y": -800,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_24",
+      "type": "text",
+      "text": "Undoing Changes",
+      "x": -893,
+      "y": -912,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_25",
+      "type": "text",
+      "text": "Resolving Conflicts",
+      "x": -748,
+      "y": -995,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_26",
+      "type": "text",
+      "text": "Collaboration Platforms",
+      "x": 23,
+      "y": -410,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_27",
+      "type": "text",
+      "text": "GitHub",
+      "x": -143,
+      "y": -1192,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_28",
+      "type": "text",
+      "text": "Bitbucket",
+      "x": 134,
+      "y": -1202,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_29",
+      "type": "text",
+      "text": "GitLab",
+      "x": 398,
+      "y": -1116,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_30",
+      "type": "text",
+      "text": "Pull Requests",
+      "x": 617,
+      "y": -945,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_31",
+      "type": "text",
+      "text": "Installation and Tooling",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_32",
+      "type": "text",
+      "text": "Operating Systems",
+      "x": 992,
+      "y": -430,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_33",
+      "type": "text",
+      "text": "Command Line Interface",
+      "x": 1100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_34",
+      "type": "text",
+      "text": "GUIs and Desktop Clients",
+      "x": 992,
+      "y": 370,
+      "width": 200,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0",
+      "fromNode": "node_0",
+      "toNode": "node_1"
+    },
+    {
+      "id": "edge_1",
+      "fromNode": "node_1",
+      "toNode": "node_2"
+    },
+    {
+      "id": "edge_2",
+      "fromNode": "node_1",
+      "toNode": "node_3"
+    },
+    {
+      "id": "edge_3",
+      "fromNode": "node_1",
+      "toNode": "node_4"
+    },
+    {
+      "id": "edge_4",
+      "fromNode": "node_1",
+      "toNode": "node_5"
+    },
+    {
+      "id": "edge_5",
+      "fromNode": "node_0",
+      "toNode": "node_6"
+    },
+    {
+      "id": "edge_6",
+      "fromNode": "node_6",
+      "toNode": "node_7"
+    },
+    {
+      "id": "edge_7",
+      "fromNode": "node_6",
+      "toNode": "node_8"
+    },
+    {
+      "id": "edge_8",
+      "fromNode": "node_6",
+      "toNode": "node_9"
+    },
+    {
+      "id": "edge_9",
+      "fromNode": "node_6",
+      "toNode": "node_10"
+    },
+    {
+      "id": "edge_10",
+      "fromNode": "node_6",
+      "toNode": "node_11"
+    },
+    {
+      "id": "edge_11",
+      "fromNode": "node_0",
+      "toNode": "node_12"
+    },
+    {
+      "id": "edge_12",
+      "fromNode": "node_12",
+      "toNode": "node_13"
+    },
+    {
+      "id": "edge_13",
+      "fromNode": "node_12",
+      "toNode": "node_14"
+    },
+    {
+      "id": "edge_14",
+      "fromNode": "node_12",
+      "toNode": "node_15"
+    },
+    {
+      "id": "edge_15",
+      "fromNode": "node_12",
+      "toNode": "node_16"
+    },
+    {
+      "id": "edge_16",
+      "fromNode": "node_12",
+      "toNode": "node_17"
+    },
+    {
+      "id": "edge_17",
+      "fromNode": "node_12",
+      "toNode": "node_18"
+    },
+    {
+      "id": "edge_18",
+      "fromNode": "node_0",
+      "toNode": "node_19"
+    },
+    {
+      "id": "edge_19",
+      "fromNode": "node_19",
+      "toNode": "node_20"
+    },
+    {
+      "id": "edge_20",
+      "fromNode": "node_19",
+      "toNode": "node_21"
+    },
+    {
+      "id": "edge_21",
+      "fromNode": "node_19",
+      "toNode": "node_22"
+    },
+    {
+      "id": "edge_22",
+      "fromNode": "node_19",
+      "toNode": "node_23"
+    },
+    {
+      "id": "edge_23",
+      "fromNode": "node_19",
+      "toNode": "node_24"
+    },
+    {
+      "id": "edge_24",
+      "fromNode": "node_19",
+      "toNode": "node_25"
+    },
+    {
+      "id": "edge_25",
+      "fromNode": "node_0",
+      "toNode": "node_26"
+    },
+    {
+      "id": "edge_26",
+      "fromNode": "node_26",
+      "toNode": "node_27"
+    },
+    {
+      "id": "edge_27",
+      "fromNode": "node_26",
+      "toNode": "node_28"
+    },
+    {
+      "id": "edge_28",
+      "fromNode": "node_26",
+      "toNode": "node_29"
+    },
+    {
+      "id": "edge_29",
+      "fromNode": "node_26",
+      "toNode": "node_30"
+    },
+    {
+      "id": "edge_30",
+      "fromNode": "node_0",
+      "toNode": "node_31"
+    },
+    {
+      "id": "edge_31",
+      "fromNode": "node_31",
+      "toNode": "node_32"
+    },
+    {
+      "id": "edge_32",
+      "fromNode": "node_31",
+      "toNode": "node_33"
+    },
+    {
+      "id": "edge_33",
+      "fromNode": "node_31",
+      "toNode": "node_34"
+    }
+  ]
+}

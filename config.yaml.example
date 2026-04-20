@@ -1,0 +1,11 @@
+obsidian:
+  vault_path: "/path/to/your/obsidian/vault"   # Mac/Linux
+  # vault_path: "C:/Users/YourName/ObsidianVault"  # Windows
+
+anthropic:
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 4096
+
+sync:
+  inbox_folder: "00 - Inbox"
+  canvas_folder: "06 - Canvas"

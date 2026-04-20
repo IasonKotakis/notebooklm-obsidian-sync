@@ -1,0 +1,631 @@
+{
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "text",
+      "text": "HashiCorp Terraform",
+      "x": -100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_1",
+      "type": "text",
+      "text": "Core Concepts",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_2",
+      "type": "text",
+      "text": "Infrastructure as Code (IaC)",
+      "x": 947,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_3",
+      "type": "text",
+      "text": "Declarative configuration",
+      "x": 1749,
+      "y": -1391,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_4",
+      "type": "text",
+      "text": "Human-readable HCL",
+      "x": 1917,
+      "y": -1205,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_5",
+      "type": "text",
+      "text": "Version control integration",
+      "x": 2043,
+      "y": -988,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_6",
+      "type": "text",
+      "text": "State Management",
+      "x": 1100,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_7",
+      "type": "text",
+      "text": "Terraform State file",
+      "x": 2273,
+      "y": -279,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_8",
+      "type": "text",
+      "text": "Source of truth",
+      "x": 2297,
+      "y": -113,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_9",
+      "type": "text",
+      "text": "Remote state storage",
+      "x": 2297,
+      "y": 53,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_10",
+      "type": "text",
+      "text": "Configuration drift detection",
+      "x": 2273,
+      "y": 219,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_11",
+      "type": "text",
+      "text": "Immutable Infrastructure",
+      "x": 947,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_12",
+      "type": "text",
+      "text": "Replace instead of modify",
+      "x": 2043,
+      "y": 928,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_13",
+      "type": "text",
+      "text": "Avoid configuration drift",
+      "x": 1917,
+      "y": 1145,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_14",
+      "type": "text",
+      "text": "Discrete versioning",
+      "x": 1749,
+      "y": 1331,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_15",
+      "type": "text",
+      "text": "Core Workflow",
+      "x": -100,
+      "y": 370,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_16",
+      "type": "text",
+      "text": "Write: Author configuration",
+      "x": 370,
+      "y": 1017,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_17",
+      "type": "text",
+      "text": "Plan: Preview changes",
+      "x": 147,
+      "y": 1130,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_18",
+      "type": "text",
+      "text": "Apply: Provision resources",
+      "x": -100,
+      "y": 1170,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_19",
+      "type": "text",
+      "text": "Refresh: Reconcile state",
+      "x": -347,
+      "y": 1130,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_20",
+      "type": "text",
+      "text": "Destroy: Decommission resources",
+      "x": -570,
+      "y": 1017,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_21",
+      "type": "text",
+      "text": "Architecture",
+      "x": -500,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_22",
+      "type": "text",
+      "text": "Terraform Core: Lifecycle management",
+      "x": -1147,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_23",
+      "type": "text",
+      "text": "Providers: API plugins",
+      "x": -1282,
+      "y": 136,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_24",
+      "type": "text",
+      "text": "IaaS (AWS, Azure, GCP)",
+      "x": -2402,
+      "y": 566,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_25",
+      "type": "text",
+      "text": "PaaS (Heroku, Kubernetes)",
+      "x": -2455,
+      "y": 385,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_26",
+      "type": "text",
+      "text": "SaaS (GitHub, Datadog)",
+      "x": -2480,
+      "y": 198,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_27",
+      "type": "text",
+      "text": "Modules: Reusable containers",
+      "x": -1282,
+      "y": -196,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_28",
+      "type": "text",
+      "text": "Terraform Registry: Public/Private sharing",
+      "x": -1147,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_29",
+      "type": "text",
+      "text": "Adoption Stages",
+      "x": -100,
+      "y": -430,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_30",
+      "type": "text",
+      "text": "Individual",
+      "x": -570,
+      "y": -1077,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_31",
+      "type": "text",
+      "text": "Local execution",
+      "x": -1461,
+      "y": -1879,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_32",
+      "type": "text",
+      "text": "Manual creds",
+      "x": -1058,
+      "y": -2173,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_33",
+      "type": "text",
+      "text": "Team",
+      "x": -100,
+      "y": -1230,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_34",
+      "type": "text",
+      "text": "VCS collaboration",
+      "x": -349,
+      "y": -2403,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_35",
+      "type": "text",
+      "text": "Remote state",
+      "x": 149,
+      "y": -2403,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_36",
+      "type": "text",
+      "text": "Organization",
+      "x": 370,
+      "y": -1077,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_37",
+      "type": "text",
+      "text": "Workspaces",
+      "x": 858,
+      "y": -2173,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_38",
+      "type": "text",
+      "text": "RBAC",
+      "x": 1075,
+      "y": -2047,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_39",
+      "type": "text",
+      "text": "Policy as Code (Sentinel)",
+      "x": 1261,
+      "y": -1879,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_40",
+      "type": "text",
+      "text": "HCP Terraform / Enterprise",
+      "x": 300,
+      "y": -30,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_41",
+      "type": "text",
+      "text": "Centralized run environment",
+      "x": 947,
+      "y": -500,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_42",
+      "type": "text",
+      "text": "Private Module Registry",
+      "x": 1082,
+      "y": -196,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_43",
+      "type": "text",
+      "text": "VCS-driven workflows",
+      "x": 1082,
+      "y": 136,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "id": "node_44",
+      "type": "text",
+      "text": "Sensitive variable security",
+      "x": 947,
+      "y": 440,
+      "width": 200,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0",
+      "fromNode": "node_0",
+      "toNode": "node_1"
+    },
+    {
+      "id": "edge_1",
+      "fromNode": "node_1",
+      "toNode": "node_2"
+    },
+    {
+      "id": "edge_2",
+      "fromNode": "node_2",
+      "toNode": "node_3"
+    },
+    {
+      "id": "edge_3",
+      "fromNode": "node_2",
+      "toNode": "node_4"
+    },
+    {
+      "id": "edge_4",
+      "fromNode": "node_2",
+      "toNode": "node_5"
+    },
+    {
+      "id": "edge_5",
+      "fromNode": "node_1",
+      "toNode": "node_6"
+    },
+    {
+      "id": "edge_6",
+      "fromNode": "node_6",
+      "toNode": "node_7"
+    },
+    {
+      "id": "edge_7",
+      "fromNode": "node_6",
+      "toNode": "node_8"
+    },
+    {
+      "id": "edge_8",
+      "fromNode": "node_6",
+      "toNode": "node_9"
+    },
+    {
+      "id": "edge_9",
+      "fromNode": "node_6",
+      "toNode": "node_10"
+    },
+    {
+      "id": "edge_10",
+      "fromNode": "node_1",
+      "toNode": "node_11"
+    },
+    {
+      "id": "edge_11",
+      "fromNode": "node_11",
+      "toNode": "node_12"
+    },
+    {
+      "id": "edge_12",
+      "fromNode": "node_11",
+      "toNode": "node_13"
+    },
+    {
+      "id": "edge_13",
+      "fromNode": "node_11",
+      "toNode": "node_14"
+    },
+    {
+      "id": "edge_14",
+      "fromNode": "node_0",
+      "toNode": "node_15"
+    },
+    {
+      "id": "edge_15",
+      "fromNode": "node_15",
+      "toNode": "node_16"
+    },
+    {
+      "id": "edge_16",
+      "fromNode": "node_15",
+      "toNode": "node_17"
+    },
+    {
+      "id": "edge_17",
+      "fromNode": "node_15",
+      "toNode": "node_18"
+    },
+    {
+      "id": "edge_18",
+      "fromNode": "node_15",
+      "toNode": "node_19"
+    },
+    {
+      "id": "edge_19",
+      "fromNode": "node_15",
+      "toNode": "node_20"
+    },
+    {
+      "id": "edge_20",
+      "fromNode": "node_0",
+      "toNode": "node_21"
+    },
+    {
+      "id": "edge_21",
+      "fromNode": "node_21",
+      "toNode": "node_22"
+    },
+    {
+      "id": "edge_22",
+      "fromNode": "node_21",
+      "toNode": "node_23"
+    },
+    {
+      "id": "edge_23",
+      "fromNode": "node_23",
+      "toNode": "node_24"
+    },
+    {
+      "id": "edge_24",
+      "fromNode": "node_23",
+      "toNode": "node_25"
+    },
+    {
+      "id": "edge_25",
+      "fromNode": "node_23",
+      "toNode": "node_26"
+    },
+    {
+      "id": "edge_26",
+      "fromNode": "node_21",
+      "toNode": "node_27"
+    },
+    {
+      "id": "edge_27",
+      "fromNode": "node_21",
+      "toNode": "node_28"
+    },
+    {
+      "id": "edge_28",
+      "fromNode": "node_0",
+      "toNode": "node_29"
+    },
+    {
+      "id": "edge_29",
+      "fromNode": "node_29",
+      "toNode": "node_30"
+    },
+    {
+      "id": "edge_30",
+      "fromNode": "node_30",
+      "toNode": "node_31"
+    },
+    {
+      "id": "edge_31",
+      "fromNode": "node_30",
+      "toNode": "node_32"
+    },
+    {
+      "id": "edge_32",
+      "fromNode": "node_29",
+      "toNode": "node_33"
+    },
+    {
+      "id": "edge_33",
+      "fromNode": "node_33",
+      "toNode": "node_34"
+    },
+    {
+      "id": "edge_34",
+      "fromNode": "node_33",
+      "toNode": "node_35"
+    },
+    {
+      "id": "edge_35",
+      "fromNode": "node_29",
+      "toNode": "node_36"
+    },
+    {
+      "id": "edge_36",
+      "fromNode": "node_36",
+      "toNode": "node_37"
+    },
+    {
+      "id": "edge_37",
+      "fromNode": "node_36",
+      "toNode": "node_38"
+    },
+    {
+      "id": "edge_38",
+      "fromNode": "node_36",
+      "toNode": "node_39"
+    },
+    {
+      "id": "edge_39",
+      "fromNode": "node_0",
+      "toNode": "node_40"
+    },
+    {
+      "id": "edge_40",
+      "fromNode": "node_40",
+      "toNode": "node_41"
+    },
+    {
+      "id": "edge_41",
+      "fromNode": "node_40",
+      "toNode": "node_42"
+    },
+    {
+      "id": "edge_42",
+      "fromNode": "node_40",
+      "toNode": "node_43"
+    },
+    {
+      "id": "edge_43",
+      "fromNode": "node_40",
+      "toNode": "node_44"
+    }
+  ]
+}

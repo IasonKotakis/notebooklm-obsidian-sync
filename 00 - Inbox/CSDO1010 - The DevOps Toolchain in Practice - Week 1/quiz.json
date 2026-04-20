@@ -1,0 +1,395 @@
+{
+  "title": "Git Quiz",
+  "questions": [
+    {
+      "question": "Which generation of version control systems introduced the 'commit before merge' distributed philosophy seen in tools like Git?",
+      "answerOptions": [
+        {
+          "text": "First Generation",
+          "isCorrect": false,
+          "rationale": "This generation focused on locking individual files to prevent concurrent editing, which is the opposite of a distributed merge-based approach."
+        },
+        {
+          "text": "Second Generation",
+          "isCorrect": false,
+          "rationale": "While this generation introduced merging, it operated on a centralized networking model that required merging before a commit could be finalized."
+        },
+        {
+          "text": "Third Generation",
+          "isCorrect": true,
+          "rationale": "This generation moved to a distributed model where developers commit changes locally before merging, allowing for greater parallel development."
+        },
+        {
+          "text": "Fourth Generation",
+          "isCorrect": false,
+          "rationale": "The source material identifies three distinct generations of version control evolution, with the current distributed systems representing the third."
+        }
+      ],
+      "hint": "Think about the progression from file locking to centralized merging, and finally to distributed systems."
+    },
+    {
+      "question": "In the Git Flow development model, what is the primary purpose of the 'develop' branch?",
+      "answerOptions": [
+        {
+          "text": "To store the official, production-ready release history",
+          "isCorrect": false,
+          "rationale": "This role is reserved for the 'main' or 'master' branch, which tracks the history of what has actually been published to users."
+        },
+        {
+          "text": "To serve as the main integration branch for all completed features",
+          "isCorrect": true,
+          "rationale": "The develop branch acts as the central hub where feature branches are merged once they are finished, preparing them for an eventual release."
+        },
+        {
+          "text": "To provide a dedicated space for urgent production bug fixes",
+          "isCorrect": false,
+          "rationale": "Urgent fixes for the production environment are handled by hotfix branches that fork directly from the main branch."
+        },
+        {
+          "text": "To act as a short-lived branch for individual developer experimentation",
+          "isCorrect": false,
+          "rationale": "Individual experiments or specific functionality additions occur in feature branches, which are branched off of develop and then deleted."
+        }
+      ],
+      "hint": "Consider which branch acts as the ongoing 'staging' area for the next scheduled release."
+    },
+    {
+      "question": "Why is trunk-based development often recommended for senior-heavy teams working on a Minimum Viable Product (MVP)?",
+      "answerOptions": [
+        {
+          "text": "It provides strict access control to prevent mistakes by inexperienced staff",
+          "isCorrect": false,
+          "rationale": "Strict control is a characteristic of Git Flow; trunk-based development relies on the trust and skill of the developers to commit directly to the main branch."
+        },
+        {
+          "text": "It ensures a long and thorough code review process for every line of code",
+          "isCorrect": false,
+          "rationale": "Lengths of review and discussion are intentionally reduced in this model to prioritize speed and continuous delivery."
+        },
+        {
+          "text": "It offers maximum development speed by reducing bureaucratic processes",
+          "isCorrect": true,
+          "rationale": "By merging frequently to a single branch and avoiding long-lived feature branches, teams can iterate and pivot rapidly during the exploration phase."
+        },
+        {
+          "text": "It is the standard requirement for running large-scale open-source projects",
+          "isCorrect": false,
+          "rationale": "Open-source projects typically use Git Flow because they cannot inherently trust all external contributors and require strict pull request gates."
+        }
+      ],
+      "hint": "Focus on the balance between team autonomy and the need for rapid iteration in a startup context."
+    },
+    {
+      "question": "What condition must be met for Git to perform a 'fast-forward' merge?",
+      "answerOptions": [
+        {
+          "text": "The branches must have diverged histories with unique commits on both sides",
+          "isCorrect": false,
+          "rationale": "Diverged histories require a 3-way merge to integrate different sequences of commits into a new merge commit."
+        },
+        {
+          "text": "There must be a linear path from the current branch tip to the target branch tip",
+          "isCorrect": true,
+          "rationale": "Git can simply move the pointer forward if the destination branch contains every commit present in the current branch in a direct line."
+        },
+        {
+          "text": "The merge must be performed on a remote repository rather than a local one",
+          "isCorrect": false,
+          "rationale": "Merge strategies are part of Git's core internal logic and apply to both local and remote branch integration."
+        },
+        {
+          "text": "The developer must manually resolve all conflicts before the merge begins",
+          "isCorrect": false,
+          "rationale": "Fast-forward merges do not have conflicting changes because there is no divergence in the history."
+        }
+      ],
+      "hint": "Consider the geometric relationship between two branch pointers that haven't branched away from each other's path."
+    },
+    {
+      "question": "Which Git command is functionally a combination of `git fetch` and `git merge`?",
+      "answerOptions": [
+        {
+          "text": "`git push`",
+          "isCorrect": false,
+          "rationale": "This command performs the opposite action by sending local commits to a remote repository rather than retrieving them."
+        },
+        {
+          "text": "`git pull`",
+          "isCorrect": true,
+          "rationale": "This command downloads changes from the remote tracking branch and immediately attempts to integrate them into the current local branch."
+        },
+        {
+          "text": "`git checkout`",
+          "isCorrect": false,
+          "rationale": "This command is primarily used to switch between different branches or to restore files in the working directory."
+        },
+        {
+          "text": "`git remote`",
+          "isCorrect": false,
+          "rationale": "This command is used for managing the connections to remote repositories, such as mapping URLs to shorthand names."
+        }
+      ],
+      "hint": "Identify the command that handles both the synchronization of data and the updating of the local branch history in one step."
+    },
+    {
+      "question": "In the context of Git configuration, which scope should be used to define settings that apply to all repositories for a specific user on a machine?",
+      "answerOptions": [
+        {
+          "text": "Local",
+          "isCorrect": false,
+          "rationale": "Local settings are restricted to the `.git/config` file within a single specific repository."
+        },
+        {
+          "text": "Global",
+          "isCorrect": true,
+          "rationale": "The global flag stores options in the user's home directory, making them the default for every project that user works on."
+        },
+        {
+          "text": "System",
+          "isCorrect": false,
+          "rationale": "System-wide settings apply to every user on the entire machine, not just one specific individual."
+        },
+        {
+          "text": "Remote",
+          "isCorrect": false,
+          "rationale": "Configuration is managed through local, global, or system scopes; 'remote' refers to the destination of pushes rather than a config file level."
+        }
+      ],
+      "hint": "Think about the flag used to set your name and email when you first install Git."
+    },
+    {
+      "question": "When a 3-way merge fails due to conflicting changes, which marker does Git use to separate the content from the 'receiving' branch and the 'merging' branch within the file?",
+      "answerOptions": [
+        {
+          "text": "`*******`",
+          "isCorrect": false,
+          "rationale": "Git uses specific angle bracket and equal sign notation rather than asterisks to denote conflict boundaries."
+        },
+        {
+          "text": "`=======`",
+          "isCorrect": true,
+          "rationale": "This line serves as the divider between the changes currently in your HEAD branch and the changes coming in from the branch being merged."
+        },
+        {
+          "text": "`-------`",
+          "isCorrect": false,
+          "rationale": "Dashes are commonly seen in diff outputs, but they do not serve as the specific central separator in a conflicted file."
+        },
+        {
+          "text": "`|||||||`",
+          "isCorrect": false,
+          "rationale": "While sometimes used in advanced 'diff3' conflict styles, the standard separator described in basic Git merging is the equal sign line."
+        }
+      ],
+      "hint": "Look for the visual indicator that acts as a horizontal line between the two versions of the code."
+    },
+    {
+      "question": "What is the primary benefit of using 'annotated' tags (`git tag -a`) instead of 'lightweight' tags?",
+      "answerOptions": [
+        {
+          "text": "Annotated tags are stored as full objects containing the tagger's name, email, and date",
+          "isCorrect": true,
+          "rationale": "Unlike lightweight tags which are just pointers, annotated tags provide a permanent, checksummed record of who created the tag and when."
+        },
+        {
+          "text": "Annotated tags allow the developer to delete the branch history while keeping the tag",
+          "isCorrect": false,
+          "rationale": "Tags in Git are references to specific commits; deleting history would invalidate the reference regardless of the tag type."
+        },
+        {
+          "text": "Only annotated tags can be used to trigger automated deployment pipelines",
+          "isCorrect": false,
+          "rationale": "CI/CD tools can usually be configured to respond to any tag reference, though annotated tags are better for audit trails."
+        },
+        {
+          "text": "Annotated tags are required to perform a fast-forward merge",
+          "isCorrect": false,
+          "rationale": "Merging strategies depend on the relationship between commits in the branch history, not on the type of tags applied to them."
+        }
+      ],
+      "hint": "Consider which tag type provides more metadata for official release documentation."
+    },
+    {
+      "question": "In the legacy Git Flow model, which branch is the only one that should fork directly off of the 'main' branch?",
+      "answerOptions": [
+        {
+          "text": "Feature branch",
+          "isCorrect": false,
+          "rationale": "Feature branches are branched from 'develop' to ensure they don't interact with production code until they are fully integrated."
+        },
+        {
+          "text": "Release branch",
+          "isCorrect": false,
+          "rationale": "Release branches fork from 'develop' once the code has reached enough maturity for final testing and polishing."
+        },
+        {
+          "text": "Hotfix branch",
+          "isCorrect": true,
+          "rationale": "Because hotfixes address critical issues in the live production environment, they must fork from the production 'main' branch and merge back into both 'main' and 'develop'."
+        },
+        {
+          "text": "Develop branch",
+          "isCorrect": false,
+          "rationale": "The 'develop' branch is usually created once at the start of the project from 'main' to serve as a parallel long-lived history."
+        }
+      ],
+      "hint": "Think about which branch type is designed to patch a live production release immediately."
+    },
+    {
+      "question": "What is the function of the `git stash` command in a developer's daily workflow?",
+      "answerOptions": [
+        {
+          "text": "It permanently deletes all uncommitted changes to clean up the workspace",
+          "isCorrect": false,
+          "rationale": "This would be achieved with a hard reset; stashing is intended for temporary storage and later retrieval."
+        },
+        {
+          "text": "It takes dirty uncommitted changes and saves them for later use, reverting the directory to a clean state",
+          "isCorrect": true,
+          "rationale": "This allows a developer to switch branches to work on something else without having to commit half-finished work."
+        },
+        {
+          "text": "It moves commits from a local repository to a remote 'stash' on the server",
+          "isCorrect": false,
+          "rationale": "Stashing is a purely local operation; moving commits to a server is the role of the 'push' command."
+        },
+        {
+          "text": "It organizes the staging area by grouping similar file changes together automatically",
+          "isCorrect": false,
+          "rationale": "Staging is managed via 'git add'; the stash acts as a separate stack of saved work independent of the index."
+        }
+      ],
+      "hint": "Imagine you need to fix an urgent bug on another branch but aren't ready to commit your current progress."
+    },
+    {
+      "question": "Git ensures the integrity of managed source code and prevents accidental or malicious alteration by using which cryptographic algorithm?",
+      "answerOptions": [
+        {
+          "text": "MD5",
+          "isCorrect": false,
+          "rationale": "MD5 is an older hashing algorithm that is not used by Git for securing its internal object relationships."
+        },
+        {
+          "text": "SHA1",
+          "isCorrect": true,
+          "rationale": "Git uses SHA1 to hash file contents and metadata, ensuring that every commit and relationship is fully traceable and authentic."
+        },
+        {
+          "text": "AES-256",
+          "isCorrect": false,
+          "rationale": "AES is an encryption standard used for hiding data, whereas Git requires a hashing algorithm to verify data integrity."
+        },
+        {
+          "text": "RSA",
+          "isCorrect": false,
+          "rationale": "RSA is used for public-key cryptography (like SSH keys), while Git's internal history tracking relies on content-based hashing."
+        }
+      ],
+      "hint": "Recall the name of the 40-character hexadecimal strings used to identify commits."
+    },
+    {
+      "question": "Which workflow model is characterized by having only one long-lived branch where all changes are small, incremental, and deployed frequently via CI/CD?",
+      "answerOptions": [
+        {
+          "text": "Git Flow",
+          "isCorrect": false,
+          "rationale": "Git Flow utilizes multiple long-lived branches (develop and main) and involves complex branching for releases."
+        },
+        {
+          "text": "GitHub Flow",
+          "isCorrect": true,
+          "rationale": "This model simplifies the process by treating the main branch as always deployable and using short-lived feature branches for review."
+        },
+        {
+          "text": "Forking Workflow",
+          "isCorrect": false,
+          "rationale": "This workflow is focused on repository isolation (cloning a full repo) rather than the specific branch management within a single shared repo."
+        },
+        {
+          "text": "Centralized Workflow",
+          "isCorrect": false,
+          "rationale": "A centralized workflow typically mimics older systems like SVN and does not emphasize the modern CI/CD patterns inherent in GitHub Flow."
+        }
+      ],
+      "hint": "Think of the 'middle ground' workflow that preserves pull requests but eliminates 'develop' and 'release' branches."
+    },
+    {
+      "question": "What occurs when you execute `git init` within an existing project directory that is not yet under version control?",
+      "answerOptions": [
+        {
+          "text": "All files in the directory are automatically committed to a new 'main' branch",
+          "isCorrect": false,
+          "rationale": "Initialization only sets up the structure; files must be manually added to the staging area and committed."
+        },
+        {
+          "text": "A new `.git` subdirectory is created, transforming the directory into a Git repository",
+          "isCorrect": true,
+          "rationale": "This subdirectory stores all the internal metadata and object databases required to track the project's future history."
+        },
+        {
+          "text": "Git creates a copy of the project in a new folder named after the user's name",
+          "isCorrect": false,
+          "rationale": "Initialization happens in-place; creating copies is a function of the 'clone' command."
+        },
+        {
+          "text": "The directory is instantly synchronized with a new repository on Bitbucket or GitHub",
+          "isCorrect": false,
+          "rationale": "Connecting to a hosting service is a separate configuration step involving the 'git remote' command."
+        }
+      ],
+      "hint": "Focus on the hidden folder Git uses to manage your project's history."
+    },
+    {
+      "question": "In 2026, Git is estimated to have a market share of approximately what percentage among version control systems?",
+      "answerOptions": [
+        {
+          "text": "$50\\%$",
+          "isCorrect": false,
+          "rationale": "Git has achieved a much higher level of dominance in the software industry than a simple majority."
+        },
+        {
+          "text": "$85\\%$",
+          "isCorrect": true,
+          "rationale": "The source material indicates that Git is the de facto standard with a commanding market presence near this figure."
+        },
+        {
+          "text": "$99\\%$",
+          "isCorrect": false,
+          "rationale": "While dominant, other systems like SVN, CVS, and Mercurial still maintain a small remaining portion of the market."
+        },
+        {
+          "text": "$70\\%$",
+          "isCorrect": false,
+          "rationale": "Git's adoption has surpassed this level due to its prevalence in both open-source and commercial sectors."
+        }
+      ],
+      "hint": "Consider the term 'de facto standard' and how ubiquitous Git has become for developers."
+    },
+    {
+      "question": "What is the main difference between 'merging' and 'rebasing' when integrating changes from one branch into another?",
+      "answerOptions": [
+        {
+          "text": "Merging deletes the target branch, while rebasing preserves it for future use",
+          "isCorrect": false,
+          "rationale": "Neither operation inherently deletes branches; deletion is a separate command performed after the integration is complete."
+        },
+        {
+          "text": "Merging creates a new commit to join histories, while rebasing moves the entire branch to begin on the tip of another",
+          "isCorrect": true,
+          "rationale": "Rebasing rewrites project history to create a cleaner, linear path, whereas merging preserves the actual chronological sequence of events."
+        },
+        {
+          "text": "Merging is only for local changes, while rebasing is required for remote collaboration",
+          "isCorrect": false,
+          "rationale": "Both can be used locally or with remotes, though rebasing shared remote branches is generally discouraged as it rewrites history."
+        },
+        {
+          "text": "Merging is a feature of Git, while rebasing was inherited from older systems like SVN",
+          "isCorrect": false,
+          "rationale": "Both are Git-specific operations; SVN handles branching and merging in a fundamentally different, less flexible way."
+        }
+      ],
+      "hint": "Think about which operation 'rewrites history' to make it look like a straight line."
+    }
+  ]
+}

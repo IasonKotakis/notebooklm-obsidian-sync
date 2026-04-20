@@ -1,0 +1,8 @@
+.env
+.sync_state.json
+config.yaml
+*.mp3
+*.mp4
+__pycache__/
+*.pyc
+.pytest_cache/

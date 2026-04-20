@@ -1,0 +1,189 @@
+{
+  "name": "CI/CD and Automation Systems",
+  "children": [
+    {
+      "name": "Jenkins",
+      "children": [
+        {
+          "name": "Core Concepts",
+          "children": [
+            {
+              "name": "Pipeline (As Code)"
+            },
+            {
+              "name": "Nodes/Agents"
+            },
+            {
+              "name": "Stages"
+            },
+            {
+              "name": "Steps"
+            }
+          ]
+        },
+        {
+          "name": "Architecture & Scaling",
+          "children": [
+            {
+              "name": "Controller-Agent Model"
+            },
+            {
+              "name": "Distributed Builds"
+            },
+            {
+              "name": "High Availability"
+            },
+            {
+              "name": "Kubernetes Integration"
+            }
+          ]
+        },
+        {
+          "name": "Syntax Types",
+          "children": [
+            {
+              "name": "Declarative (Recommended)"
+            },
+            {
+              "name": "Scripted (Groovy-based)"
+            }
+          ]
+        },
+        {
+          "name": "Manageability",
+          "children": [
+            {
+              "name": "Plugin Ecosystem (1800+)"
+            },
+            {
+              "name": "Test Controllers"
+            },
+            {
+              "name": "Shared Libraries"
+            },
+            {
+              "name": "Configuration as Code (JCasC)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "children": [
+        {
+          "name": "Components",
+          "children": [
+            {
+              "name": "Workflows (YAML)"
+            },
+            {
+              "name": "Events/Triggers"
+            },
+            {
+              "name": "Jobs"
+            },
+            {
+              "name": "Actions (Marketplace)"
+            }
+          ]
+        },
+        {
+          "name": "Runners",
+          "children": [
+            {
+              "name": "GitHub-hosted"
+            },
+            {
+              "name": "Self-hosted"
+            }
+          ]
+        },
+        {
+          "name": "Key Features",
+          "children": [
+            {
+              "name": "Native Integration"
+            },
+            {
+              "name": "Serverless Convenience"
+            },
+            {
+              "name": "Reusable Workflows"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GitLab CI",
+      "children": [
+        {
+          "name": "Value Proposition",
+          "children": [
+            {
+              "name": "All-in-One Platform"
+            },
+            {
+              "name": "DevSecOps Integration"
+            },
+            {
+              "name": "Auto DevOps"
+            }
+          ]
+        },
+        {
+          "name": "Features",
+          "children": [
+            {
+              "name": "GitLab Runner"
+            },
+            {
+              "name": "Merge Trains"
+            },
+            {
+              "name": "Built-in Security Scanners"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CI/CD Pipeline Stages",
+      "children": [
+        {
+          "name": "Build (Compile/Package)"
+        },
+        {
+          "name": "Test (Unit/Integration)"
+        },
+        {
+          "name": "Deliver (Staging)"
+        },
+        {
+          "name": "Deploy (Production)"
+        }
+      ]
+    },
+    {
+      "name": "Best Practices",
+      "children": [
+        {
+          "name": "Version Control Definitions"
+        },
+        {
+          "name": "Minimize Logic in DSL"
+        },
+        {
+          "name": "Shift-Left Security"
+        },
+        {
+          "name": "Clean Workspaces"
+        },
+        {
+          "name": "Automated Testing"
+        }
+      ]
+    }
+  ]
+}

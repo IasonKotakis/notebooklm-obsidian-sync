@@ -1,0 +1,161 @@
+{
+  "name": "HashiCorp Terraform",
+  "children": [
+    {
+      "name": "Core Concepts",
+      "children": [
+        {
+          "name": "Infrastructure as Code (IaC)",
+          "children": [
+            {
+              "name": "Declarative configuration"
+            },
+            {
+              "name": "Human-readable HCL"
+            },
+            {
+              "name": "Version control integration"
+            }
+          ]
+        },
+        {
+          "name": "State Management",
+          "children": [
+            {
+              "name": "Terraform State file"
+            },
+            {
+              "name": "Source of truth"
+            },
+            {
+              "name": "Remote state storage"
+            },
+            {
+              "name": "Configuration drift detection"
+            }
+          ]
+        },
+        {
+          "name": "Immutable Infrastructure",
+          "children": [
+            {
+              "name": "Replace instead of modify"
+            },
+            {
+              "name": "Avoid configuration drift"
+            },
+            {
+              "name": "Discrete versioning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Workflow",
+      "children": [
+        {
+          "name": "Write: Author configuration"
+        },
+        {
+          "name": "Plan: Preview changes"
+        },
+        {
+          "name": "Apply: Provision resources"
+        },
+        {
+          "name": "Refresh: Reconcile state"
+        },
+        {
+          "name": "Destroy: Decommission resources"
+        }
+      ]
+    },
+    {
+      "name": "Architecture",
+      "children": [
+        {
+          "name": "Terraform Core: Lifecycle management"
+        },
+        {
+          "name": "Providers: API plugins",
+          "children": [
+            {
+              "name": "IaaS (AWS, Azure, GCP)"
+            },
+            {
+              "name": "PaaS (Heroku, Kubernetes)"
+            },
+            {
+              "name": "SaaS (GitHub, Datadog)"
+            }
+          ]
+        },
+        {
+          "name": "Modules: Reusable containers"
+        },
+        {
+          "name": "Terraform Registry: Public/Private sharing"
+        }
+      ]
+    },
+    {
+      "name": "Adoption Stages",
+      "children": [
+        {
+          "name": "Individual",
+          "children": [
+            {
+              "name": "Local execution"
+            },
+            {
+              "name": "Manual creds"
+            }
+          ]
+        },
+        {
+          "name": "Team",
+          "children": [
+            {
+              "name": "VCS collaboration"
+            },
+            {
+              "name": "Remote state"
+            }
+          ]
+        },
+        {
+          "name": "Organization",
+          "children": [
+            {
+              "name": "Workspaces"
+            },
+            {
+              "name": "RBAC"
+            },
+            {
+              "name": "Policy as Code (Sentinel)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HCP Terraform / Enterprise",
+      "children": [
+        {
+          "name": "Centralized run environment"
+        },
+        {
+          "name": "Private Module Registry"
+        },
+        {
+          "name": "VCS-driven workflows"
+        },
+        {
+          "name": "Sensitive variable security"
+        }
+      ]
+    }
+  ]
+}
