@@ -22,7 +22,7 @@ NotebookLM → fetcher.py  (local)
 ## ⚠️ Important disclaimers
 
 - **notebooklm-py** is an unofficial, community-built Python client. It is **not** affiliated with or supported by Google. It may break without warning if Google changes their platform.
-- **This tool requires your own Anthropic API key.** You will be billed directly by Anthropic for API usage. Estimated cost: ~$0.01 per notebook synced.
+- **This tool requires your own Anthropic API key.** You will be billed directly by Anthropic for API usage. Estimated cost: ~$0.03–$0.04 per notebook (default mode); ~$0.11–$0.15 per notebook with source notes enabled.
 - **Audio and content stay local.** Only the transformed text (study guide report + transcript) is sent to Anthropic for note generation. Nothing else leaves your machine.
 
 ---
@@ -40,7 +40,7 @@ NotebookLM → fetcher.py  (local)
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/[your-username]/notebooklm-obsidian-sync
+git clone https://github.com/IasonKotakis/notebooklm-obsidian-sync
 cd notebooklm-obsidian-sync
 
 # 2. Install dependencies
@@ -75,7 +75,12 @@ python sync.py
 |------|------|------|
 | Fetch notebooks | notebooklm-py | Free |
 | Transcribe audio | Whisper (local) | Free |
-| Generate Obsidian notes | Anthropic API | ~$0.01 per notebook |
+| Generate main Obsidian note | Anthropic API | ~$0.03–$0.04 per notebook |
+| Generate source notes (optional) | Anthropic API | ~$0.008 per source |
+
+**Default mode** (no source notes): ~$0.03–$0.04 per notebook.
+**With source notes**: ~$0.11–$0.15 per notebook (assumes ~10 sources).
+A vault of 50 notebooks costs roughly $1.50–$2.00 for the initial sync; subsequent runs are near-zero since only changed notebooks are re-processed.
 
 Only the Claude transformation step costs money.
 
