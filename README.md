@@ -1,21 +1,37 @@
 # notebooklm-obsidian-sync
 
-Sync your NotebookLM notebooks into structured Obsidian notes with a single command.
+`notebooklm-obsidian-sync` turns your NotebookLM notebooks into structured, interlinked Obsidian notes — automatically. One command and your study guides, mind maps, audio transcripts, quizzes, and source notes land in your vault, ready to think with.
 
 ![Python](https://img.shields.io/badge/python-3.12-blue) ![License](https://img.shields.io/badge/license-MIT-green) ![Status](https://img.shields.io/badge/status-beta-yellow)
 
 ---
 
-## What it does
+## How it works
 
-`notebooklm-obsidian-sync` fetches your NotebookLM notebooks, transcribes audio overviews locally using Whisper, sends the extracted text to the Anthropic API, and writes structured Obsidian markdown notes — including Canvas mind maps, quiz notes, and source notes. One command: `python sync.py`.
+You run `python sync.py`. That's it.
 
-```
-NotebookLM → fetcher.py  (local)
-           → transcriber.py  (local Whisper)
-           → transformer.py  (Anthropic API ← only external call)
-           → Obsidian vault  (local)
-```
+Behind the scenes, it connects to your NotebookLM account and fetches every notebook you have. For each one, it downloads the study guide report, the mind map, the audio overview, any quizzes, and the full text of all your sources.
+
+The audio overview gets transcribed locally on your machine using Whisper — nothing leaves your computer for that step. Then the report and transcript get sent to Claude, which transforms them into a clean, structured Obsidian note with YAML frontmatter, wikilinks, key concepts, and open questions — the kind of note you'd actually want to read and link from.
+
+The mind map becomes an Obsidian Canvas file. The quiz becomes a note with collapsible answer callouts. Each source gets its own atomic note. Everything lands in your vault under `00 - Inbox/[notebook-title]/`, already interlinked and ready to connect to the rest of your knowledge graph.
+
+On subsequent runs, only notebooks that have actually changed get re-processed. Already up-to-date notebooks are skipped in milliseconds.
+
+---
+
+## What you get
+
+For each notebook, the tool creates:
+
+- **`[Title].md`** — the main Obsidian note: frontmatter, core idea, key concepts, connections, open questions, wikilinks throughout
+- **`[Title].canvas`** — the mind map as an Obsidian Canvas file, laid out spatially
+- **`transcript.md`** — the audio overview, transcribed locally via Whisper
+- **`quiz.md`** — multiple-choice questions with answers hidden in collapsed callouts
+- **`sources/[source].md`** — one atomic note per source (web page, PDF, YouTube video)
+- **`sources/index.md`** — a table of all sources with types and URLs
+
+Everything is plain markdown. No lock-in, no proprietary formats, no cloud sync required.
 
 ---
 
@@ -23,7 +39,7 @@ NotebookLM → fetcher.py  (local)
 
 - **notebooklm-py** is an unofficial, community-built Python client. It is **not** affiliated with or supported by Google. It may break without warning if Google changes their platform.
 - **This tool requires your own Anthropic API key.** You will be billed directly by Anthropic for API usage. Estimated cost: ~$0.03–$0.04 per notebook (default mode); ~$0.11–$0.15 per notebook with source notes enabled.
-- **Audio and content stay local.** Only the transformed text (study guide report + transcript) is sent to Anthropic for note generation. Nothing else leaves your machine.
+- **Audio and content stay local.** Only the extracted text (study guide report + Whisper transcript) is sent to Anthropic. Audio files, cookies, and file paths never leave your machine.
 
 ---
 
@@ -69,6 +85,20 @@ python sync.py
 
 ---
 
+## What's inside
+
+```
+sync/
+├── fetcher.py       — downloads all artifacts from NotebookLM (report, audio, mindmap, quiz, sources)
+├── transcriber.py   — runs Whisper locally to transcribe audio overviews
+├── transformer.py   — calls Claude to generate structured Obsidian notes; converts mindmaps to Canvas
+└── state.py         — tracks which notebooks have changed so unchanged ones are skipped
+```
+
+`sync.py` is the entry point. It wires everything together and writes all output into your vault.
+
+---
+
 ## Cost
 
 | Step | Tool | Cost |
@@ -86,24 +116,20 @@ Only the Claude transformation step costs money.
 
 ---
 
-## Current status / roadmap
+## Philosophy
 
-**Working:**
-- Study guide reports → structured Obsidian notes
-- Mind maps → Obsidian Canvas files
-- Audio overviews → local Whisper transcription
-- Quiz JSON → collapsible quiz notes
-
-**In progress:**
-- Video overviews
-- Source URL extraction
-- Quiz generation improvements
+- **Local-first** — audio, transcription, and your vault never leave your machine
+- **Single command** — no dashboards, no UI, no manual steps
+- **Incremental** — only changed notebooks are re-processed; the rest are skipped instantly
+- **Plain files** — everything is markdown; works with any Obsidian setup
 
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, how to run tests, and PR guidelines.
+
+Note that `notebooklm-py` is a dependency we don't control. If something breaks because Google changed their platform, tag the issue `[upstream]`.
 
 ---
 
